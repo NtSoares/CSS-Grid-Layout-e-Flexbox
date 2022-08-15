@@ -1,30 +1,55 @@
- html,
- body {
-     box-sizing: border-box;
-     margin: 0;
-     padding: 0;
-     width: 100%;
-     height: 100%;
- }
+main {
+    height: 500px;
+    background-color: black;
+}
 
- .container {
-     background: black;
-     width: 100vw;
-     height: 100vh;
+div {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
+    text-align: center;
+    font-weight: bold;
+}
 
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
-     grid-template-rows: 1fr 1fr 1fr;
-     grid-gap: 5px;
- }
+.bloco1 {
+    background-color: cyan;
+}
 
- .container>div {
-     background: #7159c1;
-     width: 50%;
-     height: 50%;
+.bloco2 {
+    background-color: magenta;
+}
 
-     /* SELF: Faz a mesma coisa que o `justify-items` e `align-items`, porém, aplicado diretamento no item de um grid */
-     align-self: center; /* Alinhamento vertical */
-     justify-self: center; /* Alinhamento horizontal */
- }
- 
+.bloco3 {
+    background-color: yellow;
+}
+
+/* .container {
+    display: flex;
+} */
+
+/* .container {
+    display: flex;
+    flex-direction: row-reverse;
+} */
+
+/* .container {
+    display: flex;
+    justify-content: center;
+} */
+
+/* .container {
+    display: flex;
+    align-items: flex-end;
+} */
+
+/* .container {
+    display: flex;
+    flex-wrap: nowrap;
+} */
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+}
